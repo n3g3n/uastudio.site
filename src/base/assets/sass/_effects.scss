@@ -17,3 +17,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.scroller {
+  margin: 0;
+  padding: 0;
+   height: 50pt;
+   line-height: 50pt;
+   width: 400px;
+   overflow: hidden;
+   // border: 1px solid black;
+}
