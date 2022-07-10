@@ -1,0 +1,85 @@
+.fancy-heading{
+  font-size: 72px;
+  font-weight: 900;
+  background: -webkit-linear-gradient(156deg, $color21 0%, $color22 70.06369426751593%);
+  background: linear-gradient(156deg, $color21 0%, $color22 70.06369426751593%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  line-height: 66px;
+
+}
+.fancy-heading-sm{
+  font-size: 52px;
+  font-weight: 900;
+  background: -webkit-linear-gradient(156deg, $color21 0%, $color22 70.06369426751593%);
+  background: linear-gradient(156deg, $color21 0%, $color22 70.06369426751593%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.scroller {
+  margin: 0;
+  padding: 0;
+   height: 50pt;
+   line-height: 50pt;
+   width: 400px;
+   overflow: hidden;
+   // border: 1px solid black;
+}
+.scroller .inner { animation: 10s normal infinite running scroll; }
+@keyframes scroll {
+   0%  	{margin-top: 0px;}
+   15% 	{margin-top: 0px;}
+
+   25%  {margin-top: -50pt;}
+   40%  {margin-top: -50pt;}
+
+   50%  {margin-top: -100pt;}
+   65%  {margin-top: -100pt;}
+
+   75%  {margin-top: -150pt;}
+   90%  {margin-top: -150pt;}
+
+   100% {margin-top: 0px;}
+}
+
+.float-img {
+  position: absolute;
+  padding-top: 50px;
+  float: left;
+  height: 400px;
+  width: 400px;
+  animation: float 6s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+// Fix Main menu
+.div-corner {
+  z-index: -1;
+}
+
+.sm-quad {
+  z-index: -1;
+}
+
+.dot {
+  z-index: -1;
+}
+
+.navbar .dropmenu {
+  z-index: 2;
+}
+// Fix Main menu
