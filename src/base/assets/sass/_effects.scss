@@ -64,3 +64,20 @@
     transform: translatey(0px);
   }
 }
+// Fix Main menu
+.div-corner {
+  z-index: -1;
+}
+
+.sm-quad {
+  z-index: -1;
+}
+
+.dot {
+  z-index: -1;
+}
+
+.navbar .dropmenu {
+  z-index: 2;
+}
+// Fix Main menu
