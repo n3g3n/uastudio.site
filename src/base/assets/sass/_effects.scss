@@ -9,3 +9,11 @@
   line-height: 66px;
 
 }
+.fancy-heading-sm{
+  font-size: 52px;
+  font-weight: 900;
+  background: -webkit-linear-gradient(156deg, $color21 0%, $color22 70.06369426751593%);
+  background: linear-gradient(156deg, $color21 0%, $color22 70.06369426751593%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
