@@ -28,3 +28,8 @@
 	width: calc( 50% - 0.25rem );
 	// background-color: darkorange;
 }
+/* If (n>4) && (n%3=2) */
+.autocol:nth-of-type(3n):nth-last-of-type(3) ~ .autocol {
+	width: calc( 50% - 0.25rem );
+	// background-color: teal;
+}
