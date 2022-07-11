@@ -23,3 +23,8 @@
 .autocol:nth-last-of-type(4):first-of-type ~ .autocol {
 	width: calc( 50% - 0.25rem );
 }
+/* If (n>4) && (n%3=1) */
+.autocol:nth-of-type(3n):nth-last-of-type(5) ~ .autocol {
+	width: calc( 50% - 0.25rem );
+	// background-color: darkorange;
+}
