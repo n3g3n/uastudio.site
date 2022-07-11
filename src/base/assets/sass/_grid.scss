@@ -1,1 +1,11 @@
 @import 'mixins'; // Import of fonts
+.autocol {
+	// outline: 1px solid red;
+	float: left;
+	// background-color: hotpink;
+	min-height: 6rem;
+	margin-right: 0.15rem;
+	margin-bottom: 0.15rem;
+	box-sizing: border-box;
+	width: calc( 33.33333% - 0.25rem );
+}
