@@ -13,3 +13,8 @@
 .autocol:only-of-type {
 	width: calc( 100% - 0.25rem );
 }
+/* If n=2 */
+.autocol:nth-last-of-type(2):first-of-type,
+.autocol:nth-last-of-type(2):first-of-type ~ .autocol {
+	width: calc( 50% - 0.25rem );
+}
