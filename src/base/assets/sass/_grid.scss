@@ -9,3 +9,7 @@
 	box-sizing: border-box;
 	width: calc( 33.33333% - 0.25rem );
 }
+/* If n=1 */
+.autocol:only-of-type {
+	width: calc( 100% - 0.25rem );
+}
