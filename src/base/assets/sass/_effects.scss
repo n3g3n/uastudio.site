@@ -42,6 +42,7 @@
 
    100% {margin-top: 0px;}
 }
+
 .float-img {
   position: absolute;
   padding-top: 50px;
@@ -51,6 +52,7 @@
   animation: float 6s ease-in-out infinite;
   z-index: 0;
 }
+
 @keyframes float {
   0% {
     transform: translatey(0px);

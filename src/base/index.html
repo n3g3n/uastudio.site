@@ -63,7 +63,7 @@
           </div>
         </div>
       </div>
-      <div class="autocol" style="text-align:center">
+      <div class="autocol" style="text-align:center; overflow:hidden">
         <div class="div-corner">
           <div class="sm-quad">
             <span class="dot"></span>
@@ -72,7 +72,7 @@
         <img class="float-img" src="/assets/img/uastudio_logo_1k.png" alt="UA STUDIO SITE">
       </div>
     </section>
-    <div class="wrapper-background">
+    <div class="wrapper-background" style="overflow:hidden">
       <section class="section2">
         <div class="div-corner">
           <div class="sm-quad-333">
@@ -97,7 +97,7 @@
           <div class="autocol">
             <h3 class="fancy-heading fancy-color-sec2"> Hosting and SSL </h3>
             <article class="sm-art-sec2">
-              <h3 class="fancy-heading fancy-color-sec3"> 66$ per year </h3>
+              <h3 class="fancy-heading fancy-color-sec3"> 166$ per year </h3>
             </article>
           </div>
           <div class="autocol">
@@ -109,7 +109,7 @@
         </article>
         <article class="containnothead">
           <div class="autocol">
-            <h2 class="fancy-heading boldier "> 99$ per year all total </h2>
+            <h2 class="fancy-heading boldier "> 199$ per year all total </h2>
             <button class="" type="button" name="button">Order All in One</button>
           </div>
         </article>
@@ -126,7 +126,7 @@
       </article>
       <p>This service as stand alone temporary unavailable.</p>
       <article class="sm-art-sec2">
-        <button type="button" name="button">Order Hosting</button>
+        <button type="button" name="button" disabled>Order Hosting</button>
       </article>
     </section>
     <div class="wrapper-background">
@@ -236,27 +236,66 @@
             </ul>
             </br></br></br></br></br></br></br>
           </div>
-          <div class="autocol">Map
-            <figure>
-              <img height="300px" width="300px" src="/assets/img/uastudio_logo_1k.png" alt="UA STUDIO MAP">
-            </figure>
+          <div class="autocol">
+            <p>Map</p>
+            <style>
+            .mapcont{
+              height:300px;
+              width:600px;
+              overflow:scroll;
+              align-self:center;
+            }
+            .map:hover{
+              margin:-25% -50% -25%;
+              text-align: center;
+              height: 307px;
+              width: 507px;
+            }
+            .map:hover{
+              margin:-25% -50% -25%;
+              text-align: center;
+              height:707px;
+              width:1007px;
+            }
+            </style>
+            <div class="mapcont">
+              <img class="map" src="/assets/img/Loc.png" alt="UA STUDIO LOCATION MAP" height="307px" width="507px">
+            </div>
+
           </div>
         </div>
       </section>
     </div>
 
   </main>
-  <style media="screen">
+  <!-- <style media="screen">
     .posrelat {
       display: block;
       position: relative;
       width: 100%;
     }
-  </style>
+  </style> -->
 
-  <footer class="autocol">
-    <div class="autocol">
-      <ul class="">
+  <footer class="wrapper-background" style="float: left; width:auto; outline: 1px solid red">
+    <div class="footcolone">
+      <p class="full-width">UA Studio was created to provide custom designs for your projects. We like to take on complex projects with superior optimization and speed. A plan will be developed for you and the cost and timing of the project will be
+        determined.
+      </p>
+    </div>
+
+    <div class="footcoltwo">
+      <ul class="nodots">
+        <li>Monday - 24H</li>
+        <li>Tuesday - 24H</li>
+        <li>Wednesday - 24H</li>
+        <li>Thursday - 24H</li>
+        <li>Friday - 24H</li>
+        <li>Saturday - 24H</li>
+        <li>Sunday - N/A</li>
+      </ul>
+    </div>
+    <div class="footcolthree">
+      <ul class="nodots">
         <li>Ukraine</li>
         <li>Velikiy Dalnik</li>
         <li>Sobornaya 119</li>
@@ -264,23 +303,8 @@
         <li>e-mail <a href="@mailto:gavelyuk@gmail.com">gavelyuk@gmail.com</a> </li>
       </ul>
     </div>
-    <div class="autocol">
-      <p class="full-width">UA Studio was created to provide custom designs for your projects. We like to take on complex projects with superior optimization and speed. A plan will be developed for you and the cost and timing of the project will be
-        determined.
-    </div>
-    </p>
+    <h6>Copyright &copy; uastudio 2022</h6>
 
-    <div class="autocol">
-      <ul class="">
-        <li>Monday - 9:00 am - 7:00 pm</li>
-        <li>Tuesday - 9:00 am - 7:00 pm</li>
-        <li>Wednesday - 9:00 am - 7:00 pm</li>
-        <li>Thursday - 9:00 am - 7:00 pm</li>
-        <li>Friday - 9:00 am - 7:00 pm</li>
-        <li>Saturday - Appointments Only</li>
-        <li>Sunday - Appointments Only</li>
-      </ul>
-    </div>
   </footer>
 
 

@@ -1,4 +1,7 @@
 @import 'mixins'; // Import of fonts
+.autocol-container{
+	display: inline-flex;
+}
 .autocol {
 	// outline: 1px solid red;
 	float: left;
@@ -9,27 +12,55 @@
 	box-sizing: border-box;
 	width: calc( 33.33333% - 0.25rem );
 }
+
 /* If n=1 */
 .autocol:only-of-type {
 	width: calc( 100% - 0.25rem );
 }
+
 /* If n=2 */
 .autocol:nth-last-of-type(2):first-of-type,
 .autocol:nth-last-of-type(2):first-of-type ~ .autocol {
 	width: calc( 50% - 0.25rem );
 }
+
 /* If n=4 */
 .autocol:nth-last-of-type(4):first-of-type,
 .autocol:nth-last-of-type(4):first-of-type ~ .autocol {
 	width: calc( 50% - 0.25rem );
 }
+
 /* If (n>4) && (n%3=1) */
 .autocol:nth-of-type(3n):nth-last-of-type(5) ~ .autocol {
 	width: calc( 50% - 0.25rem );
 	// background-color: darkorange;
 }
+
 /* If (n>4) && (n%3=2) */
 .autocol:nth-of-type(3n):nth-last-of-type(3) ~ .autocol {
 	width: calc( 50% - 0.25rem );
 	// background-color: teal;
+}
+
+.footcolone {
+	display: inline-flex;
+	float: left;
+	padding: 10px;
+	min-height: 6rem;
+	height: 180px;
+	margin-right: 0.15rem;
+	margin-bottom: 0.15rem;
+	box-sizing: border-box;
+	width: calc( 49.9999% - 0.25rem );
+}
+
+.footcoltwo, .footcolthree{
+	display: inline-flex;
+	padding: 10px;
+	min-height: 6rem;
+	height: 180px;
+	margin-right: 0.15rem;
+	margin-bottom: 0.15rem;
+	box-sizing: border-box;
+	width: calc(19.9999% - 0.25rem );
 }

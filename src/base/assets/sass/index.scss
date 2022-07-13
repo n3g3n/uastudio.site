@@ -1,14 +1,45 @@
 // Contain screen sizes
-@import 'mixins';
-// Import of fonts
+@import 'mixins'; // Import of fonts
 @import 'fonts';
-@import 'font-size-var';
-// Global colors (backgrounds++)
-@import 'colors';
+@import 'font-size-var'; // Global colors (backgrounds++)
 @import 'grid';
-// Backgrounds using css and gradients
+@import 'colors'; // Backgrounds using css and gradients
 @import 'effects';
-@import 'backgrounds';
+@import 'backgrounds'; // @include for-phone-only {
+//   top: calc(50vh - 90px);
+//   left: calc(50vw - 50px);
+//   width: 150px;
+//   height: 90px;
+// }
+// @include for-tablet-portrait-up {
+//   top: calc(50vh - 150px);
+//   left: calc(50vw - 200px);
+//   width: 200px;
+//   height: 90px;
+// }
+// @include for-tablet-landscape-up {
+//   top: calc(50vh - 150px);
+//   left: calc(50vw - 200px);
+//   width: 400px;
+//   height: 90px;
+// }
+// @include for-desktop-up {
+//   // border:1px solid magenta;
+//   top: calc(50vh - 300px);
+//   left: calc(50vw - 100px);
+//   width: 300px;
+//   height: 90px;
+// }
+// @include for-big-desktop-up {
+//   top: calc(50vh - 300px);
+//   left: calc(50vw - 100px);
+//   width: 600px;
+//   height: 90px;
+// }
+//
+// * {
+//   outline: 1px solid blue;
+// }
 // Basic Button Style
 button {
   box-sizing: border-box;
@@ -79,6 +110,57 @@ button {
     color: #fff;
     background-position: 100px;
   }
+  &:disabled{
+    cursor: not-allowed;
+    color: $color11;
+    color: $color11;
+    $btndisable: #c0c0c0;
+    background: {
+      image: linear-gradient(to right,
+        transparentize($btndisable, 0.4),
+        transparentize($btndisable, 0.4) 5%,
+        $btndisable 5%,
+        $btndisable 10%,
+        transparentize($btndisable, 0.4) 10%,
+        transparentize($btndisable, 0.4) 15%,
+        $btndisable 15%,
+        $btndisable 20%,
+        transparentize($btndisable, 0.4) 20%,
+        transparentize($btndisable, 0.4) 25%,
+        $btndisable 25%,
+        $btndisable 30%,
+        transparentize($btndisable, 0.4) 30%,
+        transparentize($btndisable, 0.4) 35%,
+        $btndisable 35%,
+        $btndisable 40%,
+        transparentize($btndisable, 0.4) 40%,
+        transparentize($btndisable, 0.4) 45%,
+        $btndisable 45%,
+        $btndisable 50%,
+        transparentize($btndisable, 0.4) 50%,
+        transparentize($btndisable, 0.4) 55%,
+        $btndisable 55%,
+        $btndisable 60%,
+        transparentize($btndisable, 0.4) 60%,
+        transparentize($btndisable, 0.4) 65%,
+        $btndisable 65%,
+        $btndisable 70%,
+        transparentize($btndisable, 0.4) 70%,
+        transparentize($btndisable, 0.4) 75%,
+        $btndisable 75%,
+        $btndisable 80%,
+        transparentize($btndisable, 0.4) 80%,
+        transparentize($btndisable, 0.4) 85%,
+        $btndisable 85%,
+        $btndisable 90%,
+        transparentize($btndisable, 0.4) 90%,
+        transparentize($btndisable, 0.4) 95%,
+        $btndisable 95%,
+        $btndisable 100%);
+      position: 0 0;
+      size: 100%;
+    }
+  }
 }
 .arrow-down {
   display: block;
@@ -99,6 +181,7 @@ button {
   border-right: 2px solid $color11;
   transform: rotate(135deg);
 }
+
 .arrow-down-container {
   display: block;
   margin: 0 auto;
@@ -118,4 +201,405 @@ button {
   100% {
     margin-top: -10px;
   }
+}
+
+html body li a {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: $bg-color;
+}
+
+.navbar {
+  // START navbar -----------------------------------
+  // background-color: rgba(100,100,100,0.1);
+  height: 75px;
+  /* Brand */
+  .brand {
+    display: flex;
+    float: left;
+    height: 100%;
+    width: 320px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: none;
+
+    &:hover {
+      background-color: rgba(100,100,100,0.1);
+    }
+
+    .brendstudio {
+      font-size: 36px;
+      color: black;
+    }
+
+    .brenduaout {
+      // outline: 1px solid black;
+      padding: 0;
+      margin: 0;
+      height: 70px;
+      width: 78px;
+      font-size: 70px;
+      color: black;
+      background-color: $color12;
+      clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+    }
+
+    .brendua {
+      content: " ";
+      // outline: 1px solid black;
+      margin: 5px;
+      padding: 0;
+      height: 60px;
+      width: 68px;
+      font-size: 36px;
+      line-height: 58px;
+      color: black;
+      background-color: white;
+      clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+    }
+  }
+  /* Navigation Bar */
+  a.dropbtn {
+    color: $color11;
+    // outline: 1px solid black;
+    background-color: white;
+
+    &:hover {
+      color: $color11;
+      background-color: $bg-sect1-color;
+    }
+  }
+  /* Navigation Button */
+  .nav-icon {
+    float: right;
+    height: 100%;
+    width: 100px;
+  }
+  /* Dropmenu & Dropbutton */
+  .dropmenu {
+    margin-top: -20px;
+    // padding-top: -20px;
+    display: none;
+    background-color: none;
+    color: #f2f2f2;
+
+    a {
+      color: $color11;
+      // outline: 1px solid black;
+      background-color: white;
+
+      &:visited {
+        color: $color12;
+        // outline: 1px solid $color11;
+      }
+
+      &:hover {
+        color: $color11;
+        background-color: $bg-sect1-color;
+      }
+    }
+  }
+}
+// END navbar -----------------------------------
+
+// button {
+//   position: relative;
+//   font-size: 20px;
+//   padding: 20px;
+//   margin: 60px;
+//   background: $color22;
+//   color: $color31;
+// }
+
+.section1,
+.section5 {
+  text-align: center;
+  background: $color-section1;
+  height: 700px;
+
+  .fancy-heading {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0;
+    line-height: 105px;
+  }
+}
+
+.wrapper-background {
+  background-color: $wrapbg;
+  z-index: -10;
+}
+
+.section2,
+.section4,
+.section6 {
+  position: relative;
+  text-align: center;
+  color: $color-section2;
+  height: 650px;
+  width: auto;
+  background-color: transparent;
+  padding: 0 0 50px;
+  z-index: 1;
+
+  .fancy-heading {
+    position: relative;
+    font-size: 32px;
+    font-weight: 900;
+    margin: 0;
+    line-height: 105px;
+    z-index: 1;
+  }
+
+  .fancy-color-sec2 {
+    position: relative;
+    background: -webkit-linear-gradient(156deg, $color11 0%, $color12 70.06369426751593%);
+    background: linear-gradient(156deg, $color11 0%, $color12 70.06369426751593%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .fancy-color-sec3 {
+    background: -webkit-linear-gradient(156deg, $color21 0%, $color22 70.06369426751593%);
+    background: linear-gradient(156deg, $color21 0%, $color22 70.06369426751593%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .boldier {
+    font-size: 50px;
+  }
+}
+
+.section3 {
+  background: $color-section1;
+  height: 500px;
+
+  h2 {
+    padding: 50px;
+  }
+}
+
+#section3 {
+  text-align: center;
+}
+
+.main-header {
+  margin-top: 105px;
+}
+
+.text-section1 {
+  ont-size: 16px;
+  font-weight: 900;
+  background: -webkit-linear-gradient(156deg, $color21 0%, $color22 70.06369426751593%);
+  background: linear-gradient(156deg, $color21 0%, $color22 70.06369426751593%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 30px;
+  line-height: 16px;
+}
+
+.menu-text {
+  display: flex;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  color: #f2f2f2;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-list {
+  // outline: 1px solid green;
+  width: 400px;
+  margin: auto;
+  align-self: center;
+  text-align: justify;
+  font-size: 32px;
+
+  a {
+    font-size: 22px;
+    color: $color22;
+
+    &:active {
+      color: $color12;
+    }
+
+    &:visited {
+      color: $color22;
+    }
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.blue-flag-bg {
+  float: right;
+  margin: 1em;
+  top:0px;
+  left: 0px;
+  height: 50px;
+  width: 70px;
+}
+
+.flag-ukraine-blue {
+  animation:waveb 2s ease-in-out infinite;
+  position: relative;
+  float: right;
+  top:0px;
+  left: 0px;
+  height: 30px;
+  width: 5px;
+  transform-origin: bottom;
+  @for $i from 1 through 14 {
+    &:nth-child(#{$i}) {
+      background: rgba(0, 0, 200 + $i, 1);
+      animation-delay: $i * 150ms;
+    }
+  }
+  @keyframes waveb {
+    50% {
+      transform: scaleY(1.1);
+    }
+  }
+}
+.flag-ukraine-yellow {
+  position: relative;
+  top:-5px;
+  left: 0px;
+  animation:wavey 2s ease-in-out infinite;
+  float: right;
+  height: 25px;
+  width: 5px;
+  transform-origin: center;
+  @for $a from 14 through 28 {
+    &:nth-child(#{$a}) {
+      background: rgba(200 + $a, 200 + $a, 0, 1);
+      animation-delay: $a * 250ms;
+    }
+  }
+  @keyframes wavey {
+    50% {
+      transform: scaleY(1.2);
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  color: $color12;
+  background: $wrapbg;
+  width: 100vw;
+  height: 200px;
+  padding: 50px 0;
+
+  p.full-width {
+    text-align: justify;
+    margin: 10px;
+  }
+
+  ul.full-width {
+    text-align: left;
+    margin: 0;
+  }
+  .nodots{
+    list-style-type: none;
+  }
+}
+/*.menu-text:hover {
+  background-color: #444;
+}*/
+@media only screen and (min-width: 768px) {
+  .nav-icon {
+    display: none;
+  }
+}
+/* Navigation Menu */
+// .navmenu {
+//   display: none;
+//   background-color: $wrapbg;
+//   width: 100%;
+//   position: absolute;
+//   top: 75px;
+//   left: 0px;
+// }
+//
+// .navmenu
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+// .navmenu a {
+//   display: block;
+//   padding-top: 20px;
+//   padding-bottom: 20px;
+//   color: #f2f2f2;
+//   text-align: center;
+//   align-items: center;
+//   text-decoration: none;
+//   font-size: 1.0rem;
+// }
+/*.navmenu a:hover {
+  background-color: #444;
+}*/
+@media only screen and (min-width: 768px) {
+  .navmenu {
+    display: block;
+    height: 100%;
+    position: unset;
+    width: unset;
+    text-align: center;
+  }
+
+  .navmenu ul {
+    height: 100%;
+  }
+
+  .navmenu li {
+    display: inline-block;
+    height: 100%;
+  }
+
+  .navmenu a {
+    display: flex;
+    margin: 0;
+    height: 100%;
+    padding: 0 15px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+  }
+}
+/*.dropdown:hover .dropmenu {
+  display: block;
+}*/
+@media only screen and (min-width: 768px) {
+  .dropmenu {
+    position: absolute;
+  }
+
+  .dropmenu a {
+    height: 75px;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: left;
+  }
+
+  .dropdown:hover .dropmenu {
+    display: block;
+  }
+}
+/* Visibility */
+.shown {
+  display: block;
 }
