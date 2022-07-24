@@ -10,13 +10,13 @@
   "license": "ISC",
   "keywords": [],
   "devDependencies": {
-    "autoprefixer": "^10.4.4",
+    "autoprefixer": "^10.4.7",
     "browser-sync": "^2.27.9",
-    "cssnano": "^5.1.7",
+    "cssnano": "^5.1.12",
     "fancy-log": "^2.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
-    "gulp-avif": "^1.1.0",
+    "gulp-avif": "^1.1.1",
     "gulp-cheerio": "^1.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
@@ -44,8 +44,16 @@
     "imagemin-svgo": "^10.0.1",
     "imagemin-webp": "^7.0.0",
     "install": "^0.13.0",
-    "npm": "^8.6.0",
-    "sass": "^1.50.0",
+    "npm": "^8.15.0",
+    "sass": "^1.54.0",
     "vinyl-buffer": "^1.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igavel/uastudio.site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/igavel/uastudio.site/issues"
+  },
+  "homepage": "https://github.com/igavel/uastudio.site#readme"
 }
