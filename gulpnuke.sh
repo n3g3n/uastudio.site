@@ -38,7 +38,7 @@ if [ $REPLY = "Y" ] ; then
   echo $(npm install --save-dev gulp-sourcemaps gulp-concat gulp-rename gulp-replace gulp-terser gulp-sass sass gulp-postcss autoprefixer cssnano gulp-htmlmin gulp-cssmin vinyl-buffer gulp-purifycss gulp-fontmin gulp-autoprefixer gulp-delete-lines gulp-cheerio gulp-filter gulp-clean gulp-image-lqip fancy-log gulp imagemin-webp autoprefixer cssnano fancy-log gulp-autoprefixer gulp-cheerio gulp-clean gulp-cssmin gulp-delete-lines gulp-filter gulp-fontmin gulp-htmlmin gulp-image-lqip gulp-imagemin gulp-postcss gulp-purifycss gulp-rename gulp-replace gulp-sass gulp-terser htmlparser2 i imagemin-gifsicle imagemin-jpegtran imagemin-mozjpeg imagemin-optipng imagemin-pngquant imagemin-svgo install npm sass vinyl-buffer gulp-avif)
 # touch .gitignore
   printf " ${BRed} Write .gitignore ... ${Color_Off} \n"
-  echo $(touch .gitignore)
+  echo $(touch .gitignore1)
   echo $(.npm>>.gitignore1>)
   echo $(.env>>.gitignore1>)
   echo $(dist>>.gitignore1>)
